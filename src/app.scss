@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //   font-family: "Inter", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: unset;
+}
+@mixin for-small-phone-only {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin for-phone-only {
+  @media (max-width: 799px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-portait-only {
+  @media (min-width: 601px) and (max-width: 799px) {
+    @content;
+  }
+}
+@mixin for-tablet-portait-only-and-for-tablet-landscape-only {
+  @media (min-width: 601px) and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-only {
+  @media (min-width: 800px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin text($fw, $fz, $lh, $col) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $col;
+}
+
+$black: #000;
+$white: #fff;
+$whiteBackg: #eeeef6;
+$blue: #3530fa;
+$grey: #747789;
+
+// ! здесь будете импортировать стили компонентов
