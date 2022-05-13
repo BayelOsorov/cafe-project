@@ -110,3 +110,8 @@ $grey: #747789;
 @import "../components/Home/Header/HeaderModule.scss";
 @import "../components/Auth/SignIn/SignInModule.scss";
 @import "../components/Auth/SignUp/SignUpModule.scss";
+
+//
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
