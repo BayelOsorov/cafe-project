@@ -1,11 +1,11 @@
 import React from "react";
-// import classes from "./HeaderModule.scss";
+import classes from "./HeaderModule.scss";
 // import { AiOutlineClose } from "react-icons/ai";
 
 export default function Header() {
   return (
     <header>
-      {/* <div className={classes.header_content}>
+      <div className={classes.header_content}>
         <h2>NavBar</h2>
       </div>
       <div className={classes.header__content__toggle}></div>
@@ -25,7 +25,7 @@ export default function Header() {
             <a href="">Корзина</a>
           </li>
         </ul>
-      </nav> */}
+      </nav>
     </header>
   );
 }

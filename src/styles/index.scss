@@ -108,3 +108,5 @@ $grey: #747789;
 
 // ! здесь будете импортировать стили компонентов
 @import "../components/Home/Header/HeaderModule.scss";
+@import "../components/Auth/SignIn/SignInModule.scss";
+@import "../components/Auth/SignUp/SignUpModule.scss";
